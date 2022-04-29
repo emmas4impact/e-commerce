@@ -10,7 +10,7 @@ import { urlFor } from "../lib/client";
 const Cart = () => {
   const cartRef = useRef();
   
-  const {totalPrice, totalQuantities, cartItems, setShowCart} = useStateContext();
+  const {totalPrice, totalQuantities,qty, cartItems, setShowCart} = useStateContext();
   console.log("State of total quantity",totalQuantities);
   return (
    
