@@ -14,7 +14,7 @@ const Navbar = () => {
       </p>
       <button type="button" className='cart-icon' onClick={()=> setShowCart(true)}>
         <AiOutlineShopping />
-        {console.log("I am in the nav bar",totalQuantities)}
+        
         <span className='cart-item-qty'>{totalQuantities}</span>
       </button>
       {showCart && <Cart />}
