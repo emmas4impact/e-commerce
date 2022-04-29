@@ -15,6 +15,7 @@ const ProductDetails = ({ product, products }) => {
   const { decQty, incQty, qty, onAdd } = useStateContext();
   return (
     <div>
+    {console.log("from slug",product)}
       <div className="product-detail-container">
         <div>
           <div className="image-container">
@@ -67,7 +68,7 @@ const ProductDetails = ({ product, products }) => {
             <button
               type="button"
               className="add-to-cart"
-              onClick={() => onAdd({ ...product, qty })}
+              onClick={()=> onAdd(product, qty )}
             >
               {" "}
               Add to Cart
