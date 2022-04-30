@@ -5,7 +5,7 @@ import { runFireWorks } from '../lib/utils';
 
 import { useStateContext } from '../context/StateContext';
 
-const success = () => {
+const Success = () => {
     const {setCartItems, setTotalPrice, setTotalQuantities} = useStateContext();
     useEffect(()=>{
         localStorage.clear();
@@ -38,4 +38,4 @@ const success = () => {
   )
 }
 
-export default success
+export default Success;
