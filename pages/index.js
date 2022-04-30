@@ -1,5 +1,5 @@
 import React from 'react'
-import product from '../ecommerce/schemas/product'
+//import product from '../ecommerce_sanity/schemas/product'
 import {Product, FooterBanner, HeroBanner} from '../components'
 import { client } from '../lib/client';
 const Home = ({products, bannerData}) => {
