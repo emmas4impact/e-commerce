@@ -93,9 +93,9 @@ const Cart = () => {
                     </div>
                     <button type="button" 
                     className="remove-item"
-                    onClick={()=>onRemove(item)} alt="Do you want to empty the cart?">
+                    onClick={()=>onRemove(item)}>
                     
-                    <TiDeleteOutline />
+                    <TiDeleteOutline title="Remove item from cart" />
                     </button>
                   </div>
                   
