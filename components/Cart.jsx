@@ -15,7 +15,7 @@ import getStripe from "../lib/getStripe";
 const Cart = () => {
   const cartRef = useRef();
 
-  const { totalPrice, totalQuantities,  cartItems, setShowCart, toggleCartItemQuantity ,onRemove } =
+  const { totalPrice, totalQuantities,  cartItems, setShowCart, toggleCartItemQuantity ,onRemove,setQty } =
     useStateContext();
     
     const handleCheckout = async () => {
@@ -58,7 +58,8 @@ const Cart = () => {
               <button
                 type="button"
                 className="btn"
-                onClick={() => setShowCart(false)}
+                onClick={() => setShowCart(false) }
+                {...setQty(1)}
               >
                 Continue Shopping
               </button>
@@ -92,7 +93,8 @@ const Cart = () => {
                     </div>
                     <button type="button" 
                     className="remove-item"
-                    onClick={()=>onRemove(item)}>
+                    onClick={()=>onRemove(item)} alt="Do you want to empty the cart?">
+                    
                     <TiDeleteOutline />
                     </button>
                   </div>
